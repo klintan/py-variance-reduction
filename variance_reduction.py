@@ -26,7 +26,7 @@ class VarianceReduction():
         """Initialize variance reduction scoring
         """
 
-    def compute_score(self, y, yleft, yright, split):
+    def compute_score(self, y, yleft, yright):
         """Computes variance score for split."""
 
         # get dataset length n and number of attributes nAtt
