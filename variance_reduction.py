@@ -43,5 +43,5 @@ class VarianceReduction():
         nright = len(yright.index)
 
         # compute scores
-        scores = (y_var - nleft/n.*yleft_var - nright/n.*yright_var)/y_var;
+        scores = (y_var - (nleft/n*yleft_var) - nright/n*yright_var)/y_var;
         return scores
