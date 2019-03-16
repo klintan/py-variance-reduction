@@ -3,6 +3,7 @@ from __future__ import division
 import numpy as np
 import pandas as pd
 
+
 class VarianceReduction():
     """
      This function computes the relative variance reduction score associated
@@ -45,5 +46,5 @@ class VarianceReduction():
         nright = len(yright.index)
 
         # compute scores
-        scores = (y_var - nleft/n*yleft_var - nright/n*yright_var)/y_var;
+        scores = (y_var - nleft / n * yleft_var - nright / n * yright_var) / y_var
         return scores
